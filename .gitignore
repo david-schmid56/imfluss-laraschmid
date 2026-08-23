@@ -11,3 +11,7 @@ nul
 /_archiv/
 /kinesiologie.zip vom Mail von Lara/
 /kinesiologie_2026-08-22_Korr47/
+/kinesiologie_2026-08-22_Farbkonzept-Lindengruen-Himmelblau/
+
+# Rohe WhatsApp-Exporte (unbenannt in assets/ übernehmen statt direkt committen)
+assets/WhatsApp Image*.jpeg
