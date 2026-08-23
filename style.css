@@ -1357,7 +1357,12 @@ a.contact-row:hover { color: var(--yellow); }
 /* ===== MOBILE NAV ===== */
 @media (max-width: 1100px) {
   .nav-links {
-    position: fixed; inset: 72px 0 0 0;
+    /* top/left/right + explizite vh-Höhe statt "inset: ...0" –
+       .nav-wrapper hat backdrop-filter, das erzeugt einen eigenen
+       Containing Block für position:fixed-Kinder. "bottom:0" würde sich
+       dadurch auf die ~72px hohe Kopfzeile statt auf den Viewport beziehen
+       und das Menü auf eine winzige, scrollende Box zusammenquetschen. */
+    position: fixed; top: 72px; left: 0; right: 0; height: calc(100vh - 72px);
     background: var(--cream);
     flex-direction: column; justify-content: flex-start;
     align-items: center; padding: 3rem 2rem; gap: 1.75rem;
