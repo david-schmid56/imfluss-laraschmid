@@ -341,6 +341,10 @@ em { font-style: normal; color: var(--yellow); }
   padding-bottom: 1px;
   transition: border-color var(--t);
 }
+.hero-emphasis {
+  font-weight: 700;
+  color: var(--cream);
+}
 /* Pfeil vor dem Text, mit geschütztem Leerzeichen, damit er nicht umbricht */
 .hero-link::before {
   content: '\2192\00a0';
