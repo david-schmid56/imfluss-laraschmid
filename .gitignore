@@ -1,0 +1,13 @@
+# Arbeitsdateien / Exporte - nicht Teil der Website
+*.docx
+*.zip
+nul
+
+# Zwischenablage-Bilder (UUID-Dateinamen) im Hauptordner
+[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f]-*.jpg
+
+# Alte/entpackte Ordner
+/Extrahieren/
+/_archiv/
+/kinesiologie.zip vom Mail von Lara/
+/kinesiologie_2026-08-22_Korr47/
