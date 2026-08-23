@@ -899,6 +899,12 @@ a.contact-row:hover { color: var(--yellow); }
 }
 .form-consent a { color: var(--dark-mid); text-decoration: underline; text-underline-offset: 2px; }
 
+/* Honeypot-Feld gegen Spam-Bots: für Menschen unsichtbar, aber nicht
+   display:none (das überspringen manche Bots gezielt). */
+.hp-field {
+  position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden;
+}
+
 
 @media (max-width: 768px) {
   .gallery-grid { grid-template-columns: 1fr; }
