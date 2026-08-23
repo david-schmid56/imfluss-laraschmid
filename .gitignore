@@ -15,3 +15,6 @@ nul
 
 # Rohe WhatsApp-Exporte (unbenannt in assets/ übernehmen statt direkt committen)
 assets/WhatsApp Image*.jpeg
+
+# Lokale Vorschau-Exporte der verschiedenen Varianten (nur zum Ansehen, kein Teil des Repos)
+/Versionen/
