@@ -27,25 +27,29 @@
 
 /* ===== TOKENS ===== */
 :root {
-  /* Farbkonzept 3 – Dottergelb & Mintweiss.
-     Dunkle Flächen: helles Maronibraun.
+  /* Farbkonzept 2 – Orange & Mintweiss.
+     Dunkle Flächen: dunkles Petrol/Tanne – liegt farblich zwischen dem
+     grünen Mintweiss-Hintergrund und dem Orange, wirkt dadurch stimmiger
+     als ein neutrales Schwarzbraun und bildet einen kräftigen, aber
+     harmonischen Kontrast zum Orange (siehe Farbkreis: Blau/Grün-Dunkel
+     gegen Orange ist eine klassische Komplementär-Kombination).
      Token-Namen (--yellow, --leaf, .btn-gelb …) sind aus der ursprünglichen
      Gelb/Sand-Palette übernommen und bewusst nicht umbenannt, damit dieser
      Entwurf risikofrei mit den anderen Farbkonzepten vergleichbar bleibt. */
   --cream:       #f3f8f5;  /* Seitenhintergrund, helles Mintweiss */
   --sand:        #e7f1ec;  /* abgesetzte Sektionen */
-  --dark:        #7a5038;  /* helles Maronibraun – Nav, Hero, dunkle Sektionen */
-  --dark-mid:    #8f6449;  /* helleres Maronibraun */
-  --leaf:        #e8b53d;  /* Dottergelb – Icons, Häkchen */
-  --leaf-light:  #f7e3ad;  /* helle Dottergelb-Fläche */
+  --dark:        #1e3438;  /* dunkles Petrol – Nav, Hero, dunkle Sektionen */
+  --dark-mid:    #33504f;  /* mittleres Petrol */
+  --leaf:        #e2793b;  /* Orange – Icons, Häkchen */
+  --leaf-light:  #f6dcc5;  /* helle Orange-Fläche */
   --tint:        #eaf2ed;  /* Hinweisboxen */
-  --yellow:      #e8b53d;  /* Dottergelb – Hauptakzent, CTA */
-  --yellow-deep: #d19f28;  /* Dottergelb für Hover */
-  --yellow-soft: #f7e3ad;  /* helles Dottergelb */
+  --yellow:      #e2793b;  /* Orange – Hauptakzent, CTA */
+  --yellow-deep: #c05f27;  /* Orange für Hover */
+  --yellow-soft: #f6dcc5;  /* helles Orange */
   --white:       #ffffff;
-  --text:        #3d2a1e;
-  --muted:       #7a6a5c;
-  --border:      #e6dcd0;
+  --text:        #23312f;
+  --muted:       #63736e;
+  --border:      #d6e5e1;
   --warn:        #b0442f;  /* warmes Ziegelrot – Warnhinweise im Text */
 
   --font-display: 'DM Sans', system-ui, sans-serif;
