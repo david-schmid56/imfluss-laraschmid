@@ -27,25 +27,24 @@
 
 /* ===== TOKENS ===== */
 :root {
-  /* Farbkonzept 3 – Dottergelb & Mintweiss.
-     Dunkle Flächen: helles Maronibraun.
+  /* Alternatives Farbkonzept – Lindengrün & helles Himmelblau.
      Token-Namen (--yellow, --leaf, .btn-gelb …) sind aus der ursprünglichen
      Gelb/Sand-Palette übernommen und bewusst nicht umbenannt, damit dieser
-     Entwurf risikofrei mit den anderen Farbkonzepten vergleichbar bleibt. */
+     Entwurf risikofrei mit der Originalfarbgebung vergleichbar bleibt. */
   --cream:       #f3f8f5;  /* Seitenhintergrund, helles Mintweiss */
   --sand:        #e7f1ec;  /* abgesetzte Sektionen */
-  --dark:        #7a5038;  /* helles Maronibraun – Nav, Hero, dunkle Sektionen */
-  --dark-mid:    #8f6449;  /* helleres Maronibraun */
-  --leaf:        #e8b53d;  /* Dottergelb – Icons, Häkchen */
-  --leaf-light:  #f7e3ad;  /* helle Dottergelb-Fläche */
+  --dark:        #26332c;  /* dunkles Tannengrün – Nav, Hero, dunkle Sektionen */
+  --dark-mid:    #3c4b41;  /* mittleres Tannengrün */
+  --leaf:        #6fb6e0;  /* helles Himmelblau – Icons, Häkchen */
+  --leaf-light:  #dceef8;  /* helle Himmelblau-Fläche */
   --tint:        #eaf2ed;  /* Hinweisboxen */
-  --yellow:      #e8b53d;  /* Dottergelb – Hauptakzent, CTA */
-  --yellow-deep: #d19f28;  /* Dottergelb für Hover */
-  --yellow-soft: #f7e3ad;  /* helles Dottergelb */
+  --yellow:      #6fa84b;  /* Lindengrün – Hauptakzent, CTA */
+  --yellow-deep: #578238;  /* Lindengrün für Hover */
+  --yellow-soft: #e4efd5;  /* helles Lindengrün */
   --white:       #ffffff;
-  --text:        #3d2a1e;
-  --muted:       #7a6a5c;
-  --border:      #e6dcd0;
+  --text:        #2b362f;
+  --muted:       #67766d;
+  --border:      #d6e6de;
   --warn:        #b0442f;  /* warmes Ziegelrot – Warnhinweise im Text */
 
   --font-display: 'DM Sans', system-ui, sans-serif;
