@@ -111,13 +111,8 @@
   const form = document.querySelector('.contact-form');
   if (form) {
     form.addEventListener('submit', async function (e) {
-      const action = form.getAttribute('action');
-      if (!action || action.includes('YOUR_FORM_ID')) {
-        e.preventDefault();
-        alert('Bitte richte Formspree ein (formspree.io) und ersetze YOUR_FORM_ID in index.html.');
-        return;
-      }
       e.preventDefault();
+      const action = form.getAttribute('action');
       const btn = form.querySelector('[type="submit"]');
       const orig = btn.textContent;
       btn.disabled = true; btn.textContent = '…';
