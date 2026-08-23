@@ -1410,4 +1410,8 @@ a.contact-row:hover { color: var(--yellow); }
   .contact-layout { grid-template-columns: 1fr; gap: 3.5rem; }
   .form-row { grid-template-columns: 1fr; }
   .contact-form { padding: 2rem 1.5rem; }
+
+  .offer-item { padding: 1.5rem; gap: 1rem; }
+  .offer-num { display: none; }
+  .offer-prices { grid-template-columns: 1fr; gap: 0.6rem; }
 }
