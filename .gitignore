@@ -15,3 +15,10 @@ nul
 
 # Rohe WhatsApp-Exporte (unbenannt in assets/ übernehmen statt direkt committen)
 assets/WhatsApp Image*.jpeg
+
+# Lokale Vorschau-Exporte der verschiedenen Varianten (nur zum Ansehen, kein Teil des Repos)
+/Versionen/
+
+# Geheime Zugangsdaten (API-Keys etc.) - niemals ins oeffentliche Repo,
+# nur direkt per FTP/SFTP auf den Server hochladen
+config.local.php
