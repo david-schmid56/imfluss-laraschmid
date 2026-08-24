@@ -11,3 +11,14 @@ nul
 /_archiv/
 /kinesiologie.zip vom Mail von Lara/
 /kinesiologie_2026-08-22_Korr47/
+/kinesiologie_2026-08-22_Farbkonzept-Lindengruen-Himmelblau/
+
+# Rohe WhatsApp-Exporte (unbenannt in assets/ übernehmen statt direkt committen)
+assets/WhatsApp Image*.jpeg
+
+# Lokale Vorschau-Exporte der verschiedenen Varianten (nur zum Ansehen, kein Teil des Repos)
+/Versionen/
+
+# Geheime Zugangsdaten (API-Keys etc.) - niemals ins oeffentliche Repo,
+# nur direkt per FTP/SFTP auf den Server hochladen
+config.local.php
