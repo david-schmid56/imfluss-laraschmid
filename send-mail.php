@@ -4,6 +4,15 @@ declare(strict_types=1);
 // Ziel-Adresse fürs Kontaktformular
 $empfaenger = 'info@kinesiologie-laraschmid.ch';
 
+// reCAPTCHA Secret Key: liegt bewusst NICHT in dieser Datei (die landet auf
+// GitHub in einem öffentlichen Repo), sondern in config.local.php, die nur
+// per FTP/SFTP direkt auf den Server hochgeladen wird und nie committet wird.
+$recaptchaSecret = '';
+$configPfad = __DIR__ . '/config.local.php';
+if (is_file($configPfad)) {
+    require $configPfad;
+}
+
 header('Content-Type: text/plain; charset=utf-8');
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
@@ -21,6 +30,28 @@ function feld(string $key): string {
 if (feld('_hp') !== '') {
     echo 'OK';
     exit;
+}
+
+// reCAPTCHA serverseitig bei Google prüfen – die Checkbox im Formular
+// allein reicht nicht, ein Bot könnte den Wert auch einfach fälschen.
+$recaptchaResponse = feld('g-recaptcha-response');
+if ($recaptchaSecret !== '' ) {
+    if ($recaptchaResponse === '') {
+        http_response_code(400);
+        echo 'Bitte reCAPTCHA-Häkchen setzen.';
+        exit;
+    }
+    $verify = file_get_contents('https://www.google.com/recaptcha/api/siteverify?' . http_build_query([
+        'secret'   => $recaptchaSecret,
+        'response' => $recaptchaResponse,
+        'remoteip' => $_SERVER['REMOTE_ADDR'] ?? '',
+    ]));
+    $verifyData = json_decode((string)$verify, true);
+    if (empty($verifyData['success'])) {
+        http_response_code(400);
+        echo 'reCAPTCHA-Prüfung fehlgeschlagen. Bitte nochmals versuchen.';
+        exit;
+    }
 }
 
 $name      = feld('name');
